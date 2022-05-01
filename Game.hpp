@@ -1,20 +1,19 @@
-#if !defined GAME_H
-#define GAME_H
-
 #include <string>
 #include <vector>
-#include "Player.hpp"
 
 namespace coup
 {
+    class Player;
     class Game
     {
-        std::vector<Player> myPlayers;
+        std::vector< coup::Player* > myPlayers;
+        std::string currentTurn;
+        int myCoins;
 
         public:
         std::vector<std::string> players();
+        void addPlayer(coup::Player* p);
+        std::string turn();
         Game();
-        ~Game();
     };
 }
-#endif
