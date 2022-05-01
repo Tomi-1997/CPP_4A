@@ -37,17 +37,14 @@ namespace coup
         virtual void transfer(coup::Player& source, coup::Player& target)
         {
             throw std::invalid_argument("Unimplemented transfer()");
-
         }
         virtual void steal(coup::Player& target)
         {
             throw std::invalid_argument("Unimplemented steal()");
-
         }
         virtual void tax()
         {
             throw std::invalid_argument("Unimplemented tax()");
-
         }
     };
 }

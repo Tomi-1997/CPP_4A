@@ -14,5 +14,9 @@ namespace coup
         {
 
         }
+        virtual void block(coup::Player& target)
+        {
+
+        }
     };
 };
